@@ -1,1 +1,1 @@
-analysing and adjusting an Image with OpenCV and Matplotlib
+This code applies a histogram to each image color channel. Then, it increases the contrast while maintaining brightness in all channels. Finally, it shows the histograms again to visualize the difference.
