@@ -59,8 +59,8 @@ cv2.waitKey()
 
 # 3: reducing the brightness:
 
-alpha = 1.7
-beta = -50
+alpha = 2
+beta = -20
 
 img2 = cv2.convertScaleAbs(img2, alpha=alpha, beta=beta)
 
@@ -70,9 +70,9 @@ cv2.waitKey(0)
 #--------------
 
 #4: Showing the new histogram:
-red_hist = cv2.calcHist([img], [0], None, [256], [0, 255])
-green_hist = cv2.calcHist([img], [1], None, [256], [0, 255])
-blue_hist = cv2.calcHist([img], [2], None, [256], [0, 255])
+red_hist = cv2.calcHist([img2], [0], None, [256], [0, 255])
+green_hist = cv2.calcHist([img2], [1], None, [256], [0, 255])
+blue_hist = cv2.calcHist([img2], [2], None, [256], [0, 255])
 
 hist_after = [red_hist, green_hist, blue_hist]
 plt.subplot(4, 1, 1)
